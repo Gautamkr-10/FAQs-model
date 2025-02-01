@@ -1,0 +1,31 @@
+{
+  "name": "faq-backend",
+  "version": "1.0.0",
+  "description": "Multilingual FAQ Management System",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "mocha src/**/*.test.js",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@google-cloud/translate": "^8.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "ioredis": "^5.3.2",
+    "joi": "^17.9.2",
+    "morgan": "^1.10.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.40.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^6.3.3"
+  }
+}
